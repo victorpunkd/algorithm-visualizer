@@ -1,0 +1,99 @@
+.bodyContainer {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.navBar {
+  width: 100%;
+  background-color: #4b4453;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 1% 1%;
+  box-shadow: 10px 0px 10px gray;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.selectOptions {
+  margin-top: 2%;
+}
+
+.card {
+  width: 100%;
+  padding: 5% 5%;
+  background-color: #00c0a3;
+  box-shadow: 0px 20px 25px -15px #27ffdf;
+  border-radius: 15px;
+  color: white;
+  height: 170px;
+  position: relative;
+}
+
+.stepHeading {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Muli", sans-serif;
+}
+
+.stepControls {
+  margin-top: 5%;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+.paddingBox {
+  padding-right: 2%;
+}
+
+.customButton {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #4b4453;
+  font-size: 15px;
+  padding: 2% 10%;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.customButton:hover {
+  background-color: white;
+  color: gray;
+  transition: all 0.3s;
+}
+
+.select {
+  font-size: 20px;
+  margin-bottom: 2%;
+}
+
+.visualizer {
+  margin-top: 4%;
+  padding: 0% 2%;
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+
+.passHeading {
+  font-family: "Muli", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: gray;
+}
+
+.array {
+  font-size: 20px;
+  color: #845ec2;
+}
+
+.result {
+  color: #4b4453;
+  font-size: 20px;
+  margin-top: 2%;
+}

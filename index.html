@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algorithm Visualizer Pro+ | Watch and learn</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Muli:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.w3schools.com/w3css/4/w3.css"
+    />
+  </head>
+  <body class="bodyContainer">
+    <nav class="navBar">Algorithm Visualizer Pro+</nav>
+    <div class="w3-row-padding selectOptions">
+      <div class="w3-third">
+        <div class="card">
+          <div class="stepHeading">1 - Choose the data set size</div>
+          <div class="stepControls">
+            <div>
+              <input
+                id="dataSize"
+                class="w3-input"
+                type="text"
+                style="height: 100%;"
+              />
+            </div>
+            <div style="margin-top: 2%;">
+              <button
+                onclick="setSize(document.getElementById('dataSize').value);"
+                class="customButton w3-block"
+              >
+                Lets Go
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-third">
+        <div class="card">
+          <div class="stepHeading">2 - Generate random integer array</div>
+          <div class="stepControls w3-small">
+            <button
+              id="generateButton"
+              onclick="generateArray()"
+              class="customButton w3-block"
+            >
+              Generate
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="w3-third">
+        <div class="card">
+          <div class="stepHeading">3 - Choose the algorithm to visualize</div>
+          <div class="stepControls w3-small">
+            <select id="algo" class="w3-block select">
+              <option value="ls">Linear Search</option>
+              <option value="bs">Binary Search</option>
+              <option value="ss">Selection Sort</option>
+              <option value="bbs">Bubble Sort</option>
+            </select>
+            <button
+              onclick="visualize(document.getElementById('algo').value)"
+              class="customButton w3-block"
+            >
+              Visualize
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="visualizer">
+      <div class="passHeading">Original Array -</div>
+      <div class="array" id="originalArray"></div>
+      <div class="passData" id="passData"></div>
+      <div class="result" id="resultDiv"></div>
+    </div>
+  </body>
+</html>
